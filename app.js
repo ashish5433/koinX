@@ -5,10 +5,12 @@ import cron from 'node-cron'
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 import CryptoSchema from "./models/Schema.js";
+import cryptoStatRoutes from "./routes/cryptoStatRoutes.js"
 require('dotenv').config();
 
 
 const app=express();
+const PORT = process.env.PORT || 3000
 // Connecting the DataBase
 mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
@@ -51,3 +53,10 @@ cron.schedule("0 */2 * * *", () => {
     console.log("Fetching crypto data...");
     fetchCryptoData();
   });
+
+
+app.use('/api',cryptoStatRoutes);
+
+app.listen(PORT,()=>{
+    console.log("Server is Running")
+})
