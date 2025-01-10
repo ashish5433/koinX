@@ -6,6 +6,7 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 import CryptoSchema from "./models/Schema.js";
 import cryptoStatRoutes from "./routes/cryptoStatRoutes.js"
+import cryptoDeviationStatRoute from "./routes/cryptoDeviationStatRoute.js"
 require('dotenv').config();
 
 
@@ -56,6 +57,7 @@ cron.schedule("0 */2 * * *", () => {
 
 
 app.use('/api',cryptoStatRoutes);
+app.use('/api',cryptoDeviationStatRoute);
 
 app.listen(PORT,()=>{
     console.log("Server is Running")
