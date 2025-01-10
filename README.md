@@ -12,3 +12,26 @@ Moreover, you can also fetch the **deviation** of any currency over its last 100
 
 **Deviation API**: [localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>](http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>)
 
+## Clone the Repository
+
+To clone the repository and run it locally, follow these steps:
+
+1. **Clone the repository** using the following command:
+   ```bash
+   git clone https://github.com/ashish5433/koinX.git
+
+2. **Navigate to the project directory:** using the following command:
+   ```bash
+   cd koinX
+3. **Install the required dependencies:** using the following command:
+   ```bash
+   npm install
+4. **Set up your environment variables** by creating a .env file and adding your MongoDB URL and any other necessary configuration:
+   ```bash
+   MONGO_URL=<your_mongo_url>
+   PORT=<your_preferred_port>
+5. **Run the application:** using the following command:
+   ```bash
+   node app.js
+1. **Visit** [http://localhost:<PORT_NUMBER>](http://localhost:<PORT_NUMBER>) to access the application.
+   
