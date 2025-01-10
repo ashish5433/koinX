@@ -6,11 +6,11 @@ Here, we are fetching data about cryptocurrencies like **Bitcoin**, **Ethereum**
 
 Additionally, we can fetch the **latest data** of any currency from the database, which can be accessed using the following URL:
 
-**Latest Data API**: [localhost:<PORT_NUMBER>/api/stats?coin_name=<coin_name>](http://localhost:<PORT_NUMBER>/api/stats?coin_name=<coin_name>)
+**Latest Data API**: [http://localhost:<PORT_NUMBER>/api/stats?coin_name=<coin_name>](http://localhost:<PORT_NUMBER>/api/stats?coin_name=<coin_name>)
 
 Moreover, you can also fetch the **deviation** of any currency over its last 100 values:
 
-**Deviation API**: [localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>](http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>)
+**Deviation API**: [http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>](http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>)
 
 ## Clone the Repository
 
