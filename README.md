@@ -11,7 +11,7 @@ Additionally, we can fetch the **latest data** of any currency from the database
 Moreover, you can also fetch the **deviation** of any currency over its last 100 values:
 
 **Deviation API**: [http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>](http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>)
-
+**NOte** Please replace the PORT_NUMBER and coin_name (for the coin you require data)
 ## Clone the Repository
 
 To clone the repository and run it locally, follow these steps:
