@@ -59,6 +59,10 @@ cron.schedule("0 */2 * * *", () => {
 app.use('/api',cryptoStatRoutes);
 app.use('/api',cryptoDeviationStatRoute);
 
+app.get('/',(req,res)=>{
+    res.send("Welcome to KoinX")
+})
+
 app.listen(PORT,()=>{
     console.log("Server is Running")
 })
