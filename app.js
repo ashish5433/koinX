@@ -39,9 +39,9 @@ const fetchCryptoData = async()=>{
             change_in_last_24hours:coin.price_change_percentage_24h
 
         }))
-        for(const data of cryptoData){
-            await CryptoSchema.insertMany(cryptoData, { ordered: false });
-        }
+       
+        await CryptoSchema.insertMany(cryptoData, { ordered: false });
+        
 
         console.log("Data updated Successfully")
     }
@@ -53,7 +53,8 @@ const fetchCryptoData = async()=>{
 cron.schedule("0 */2 * * *", () => {
     console.log("Fetching crypto data...");
     fetchCryptoData();
-  });
+});
+
 
 
 app.use('/api',cryptoStatRoutes);
