@@ -39,7 +39,7 @@ const fetchCryptoData = async()=>{
 
         }))
         for(const data of cryptoData){
-            await CryptoSchema.findOneAndUpdate({id:data.id},data,{upsert:true,new:true})
+            await CryptoSchema.insertMany(cryptoData, { ordered: false });
         }
 
         console.log("Data updated Successfully")

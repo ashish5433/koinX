@@ -10,7 +10,7 @@ router.get('/stats',async(req,res)=>{
         return res.status(404).json({error:'Coin Data not found'})
     }
     try{
-        const cryptoData=await CryptoSchema.findOne({id:coin_name})
+        const cryptoData=await CryptoSchema.findOne({id:coin_name}).sort({ last_updated: -1 });
         if(!cryptoData){
             return res.status(404).json({error:'Coin data not found'})
         }
