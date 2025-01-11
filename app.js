@@ -61,6 +61,7 @@ app.use('/api',cryptoStatRoutes);
 app.use('/api',cryptoDeviationStatRoute);
 
 app.get('/',(req,res)=>{
+    console.log('Root route hit')
     res.send("Welcome to KoinX")
 })
 
