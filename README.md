@@ -4,7 +4,7 @@ Here, we are fetching data about cryptocurrencies like **Bitcoin**, **Ethereum**
 
 **API**: [https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin_name}](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin_name})  
 
-**Main Entry** : [http://localhost:3000/](http://localhost:3000/)
+**Main Entry** : [http://localhost:<port_number>/](http://localhost:3000/)
 Or
 [https://koinx-d2yf.onrender.com/](https://koinx-d2yf.onrender.com/)
 
