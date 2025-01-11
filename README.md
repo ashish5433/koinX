@@ -18,7 +18,7 @@ Moreover, you can also fetch the **deviation** of any currency over its last 100
 
 **Deviation API**: [http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>](http://localhost:<PORT_NUMBER>/api/deviation?coin_name=<coin_name>)  
 or 
-[https://koinx-d2yf.onrender.com/api/deviation?coin_name={coin_name}](https://koinx-d2yf.onrender.com/api/deviation?coin_name=())
+[https://koinx-d2yf.onrender.com/api/deviation?coin_name={coin_name}](https://koinx-d2yf.onrender.com/api/deviation?coin_name=())  
 **Note :** Please replace the PORT_NUMBER and coin_name (for the coin you require data)
 ## Clone the Repository
 
