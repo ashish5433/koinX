@@ -2,7 +2,8 @@
 
 Here, we are fetching data about cryptocurrencies like **Bitcoin**, **Ethereum**, and **Matic Network** using an API:
 
-**API**: [https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin_name}](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin_name})
+**API**: [https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin_name}](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin_name})  
+
 **Main Entry** : [http://localhost:3000/](http://localhost:3000/)
 Or
 [https://koinx-d2yf.onrender.com/](https://koinx-d2yf.onrender.com/)
